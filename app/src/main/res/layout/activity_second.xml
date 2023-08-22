@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/secEdtBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Entered Name"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/secEdtBox"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioUpperCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UpperCase"
+            android:checked="false"
+            />
+
+        <RadioButton
+            android:id="@+id/radioLowerCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LowerCase"
+            android:checked="false"
+            />
+
+        <RadioButton
+            android:id="@+id/radioTitleCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title Casing"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/radioReverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reverse"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSecSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/btnSecCancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCLE"
+        app:layout_constraintRight_toLeftOf="@id/btnSecSet"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        android:layout_marginRight="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
