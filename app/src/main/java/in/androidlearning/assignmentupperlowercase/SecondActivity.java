@@ -129,5 +129,12 @@ public class SecondActivity extends Activity {
             }
         }
 
+        private class OnCancleBtnClickListener implements View.OnClickListener{
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        }
+
     }
 
